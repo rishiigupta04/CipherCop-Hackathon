@@ -51,7 +51,7 @@ flowchart TD
     E3 --> F
     
     F --> G[Final Verdict]
-
+```
 ### Multi-Modal Analysis Pipeline:
 - **Structural Analysis**: 30+ URL features, DNS patterns, domain characteristics
 - **Content Analysis**: Web scraping + NLP via local LLM
