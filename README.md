@@ -207,6 +207,18 @@ sequenceDiagram
 - **Advanced OCR** - Tesseract with preprocessing for text extraction
 - **Robust Error Handling** - Graceful degradation when modules fail
 
+  ## 🎬 Demo Video
+
+[![Demo Video]()
+
+**Watch our complete system demonstration and technical walkthrough!**
+
+  ## 📑 Presentaion Slides
+
+[![PPT]()
+
+---
+
 ## 📁 Project Structure
 
 ```
@@ -402,15 +414,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Hackathon organizers for the inspiring challenge
 - Open-source community for the amazing tools
 - Security researchers for fraud pattern insights
-
----
-
-## 🎬 Demo Video
-
-[![Demo Video]()
-
-**Watch our complete system demonstration and technical walkthrough!**
-
----
-
-**Built with ❤️ for a safer digital world**
