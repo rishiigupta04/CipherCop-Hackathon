@@ -26,33 +26,6 @@ Input (URL/Image) → Processing → [ML + LLM + CV] → Ensemble → Final Verd
 
 Each analysis completes in under 30 seconds with parallel execution:
 
-```mermaid
-graph TB
-    subgraph Frontend
-        A[Streamlit UI]
-    end
-    
-    subgraph AI_Models
-        B[LightGBM]
-        C[Mistral LLM]
-        D[Computer Vision]
-    end
-    
-    subgraph Tools
-        E[Selenium]
-        F[OpenCV]
-        G[SHAP]
-        H[BeautifulSoup]
-    end
-    
-    A --> B
-    A --> C
-    A --> D
-    B --> G
-    C --> H
-    D --> F
-    D --> E
-```
 
 ```mermaid
 flowchart TB
@@ -123,6 +96,36 @@ flowchart TB
     classDef pipeline fill:#EF9A9A,stroke:#C62828,color:#000
     classDef output fill:#CE93D8,stroke:#6A1B9A,color:#000
 ```
+<hr style="border:1px solid #ccc; margin:30px 0;">
+
+```mermaid
+graph TB
+    subgraph Frontend
+        A[Streamlit UI]
+    end
+    
+    subgraph AI_Models
+        B[LightGBM]
+        C[Mistral LLM]
+        D[Computer Vision]
+    end
+    
+    subgraph Tools
+        E[Selenium]
+        F[OpenCV]
+        G[SHAP]
+        H[BeautifulSoup]
+    end
+    
+    A --> B
+    A --> C
+    A --> D
+    B --> G
+    C --> H
+    D --> F
+    D --> E
+```
+<hr style="border:1px solid #ccc; margin:30px 0;">
 
 ```mermaid
 flowchart TD
@@ -151,6 +154,7 @@ flowchart TD
     style H fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px,color:#000000
     style I fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#000000
 ```
+<hr style="border:1px solid #ccc; margin:30px 0;">
 
 ```mermaid
 sequenceDiagram
