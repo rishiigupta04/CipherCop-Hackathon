@@ -223,10 +223,10 @@ print(f"Similarity Score: {similarity['score']}")
 
 ## 👥 Team
 
-Harsh Jain
-Sumit Kothari
-Nikhil Singh
-Rishiraj Gupta
+- *Harsh Jain*
+- *Rishiraj Gupta*
+- *Nikhil Singh*
+- *Sumit Kothari*
 
 ## 📝 License
 
