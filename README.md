@@ -104,9 +104,9 @@ flowchart TD
     J --> K[Explainability Report]
     K --> L[User Dashboard]
     
-    style F fill:#fff3e0,stroke:#ff9800,stroke-width:2px
-    style H fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
-    style I fill:#ffcdd2,stroke:#c62828,stroke-width:2px
+    style F fill:#fff3e0,stroke:#ff9800,stroke-width:2px,color:#000000
+    style H fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px,color:#000000
+    style I fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#000000
 ```
 
 ```mermaid
