@@ -207,7 +207,7 @@ sequenceDiagram
 - **Advanced OCR** - Tesseract with preprocessing for text extraction
 - **Robust Error Handling** - Graceful degradation when modules fail
 
-## 🎬 Demo Video & 📑 Presentaion Slides
+## 🎬 Demo Video & Presentation Slides
 
 [![Demo Video]()
 
