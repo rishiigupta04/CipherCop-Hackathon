@@ -216,9 +216,7 @@ sequenceDiagram
 
 ## 🎬 Demo Video & Presentation Slides
 
-[![Demo Video](https://youtu.be/2m9npI4JRYI)
-
-[View PPT](./assets/Spot-the-Fake.pdf)
+[![Demo Video](https://img.youtube.com/vi/2m9npI4JRYI/0.jpg)](https://youtu.be/2m9npI4JRYI)
 
 **Watch our complete system demonstration and technical walkthrough!**
 
