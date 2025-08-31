@@ -51,8 +51,8 @@ flowchart TD
     E3 --> F
     
     F --> G[Final Verdict]
-```
-```mermaid
+
+
 graph TB
     subgraph Frontend
         A[Streamlit UI]
@@ -78,11 +78,12 @@ graph TB
     C --> H
     D --> F
     D --> E
+```
 ### Multi-Modal Analysis Pipeline:
 - **Structural Analysis**: 30+ URL features, DNS patterns, domain characteristics
 - **Content Analysis**: Web scraping + NLP via local LLM
 - **Visual Analysis**: Screenshot comparison with brand references
-```
+  
 
 ## 🚀 Key Features
 
