@@ -51,8 +51,8 @@ flowchart TD
     E3 --> F
     
     F --> G[Final Verdict]
-
-
+```
+```mermaid
 graph TB
     subgraph Frontend
         A[Streamlit UI]
