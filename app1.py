@@ -8,10 +8,11 @@ from rapidfuzz import process
 from urllib.parse import urlparse
 import socket
 import requests
+import os
 
-# ---------- Config ----------
-BRANDS_FOLDER = "C:/Users/Harsh/Documents/Hackathon/Brands"
-USER_FOLDER   = "C:/Users/Harsh/Documents/Hackathon/User"
+BASE_DIR = os.path.dirname(os.path.abspath(_file_))  # current file location
+BRANDS_FOLDER = os.path.join(BASE_DIR, "Brands")
+USER_FOLDER   = os.path.join(BASE_DIR, "User")
 
 os.makedirs(BRANDS_FOLDER, exist_ok=True)
 os.makedirs(USER_FOLDER,   exist_ok=True)
