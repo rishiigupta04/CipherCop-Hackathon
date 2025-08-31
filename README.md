@@ -79,6 +79,37 @@ graph TB
     D --> F
     D --> E
 ```
+```mermaid
+sequenceDiagram
+    actor User
+    participant StreamlitUI as Streamlit UI
+    participant Validator
+    participant ML as ML Module
+    participant LLM as LLM Module
+    participant CV as CV Module
+    participant Ensemble
+
+    User ->> StreamlitUI: Submit URL
+    StreamlitUI ->> Validator: Validate & normalize
+    Validator -->> StreamlitUI: ✅ Valid URL
+
+    par Parallel Analysis
+        StreamlitUI ->> ML: Extract features
+        ML -->> StreamlitUI: Legitimacy score + SHAP
+
+        StreamlitUI ->> LLM: Scrape & analyze content
+        LLM -->> StreamlitUI: Risk assessment + evidence
+
+        StreamlitUI ->> CV: Screenshot & compare
+        CV -->> StreamlitUI: Similarity score + breakdown
+    end
+
+    StreamlitUI ->> Ensemble: Combine all scores
+    Ensemble -->> StreamlitUI: Final verdict + weights
+
+    StreamlitUI -->> User: Display comprehensive results
+```
+
 ### Multi-Modal Analysis Pipeline:
 - **Structural Analysis**: 30+ URL features, DNS patterns, domain characteristics
 - **Content Analysis**: Web scraping + NLP via local LLM
