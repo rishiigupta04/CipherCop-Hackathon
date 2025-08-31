@@ -27,33 +27,30 @@ Input (URL/Image) → Processing → [ML + LLM + CV] → Ensemble → Final Verd
 Each analysis completes in under 30 seconds with parallel execution:
 
 ```mermaid
-graph TD
-    A[User Input] --> B{Input Type?}
-    B -->|URL| C[URL Processor]
-    B -->|Local Image| D[File Processor]
+flowchart TD
+    A[Input URL] --> B[Parallel Processing]
     
-    C --> E[DNS/HTTP Validation]
-    C --> F[Screenshot Capture]
-    D --> G[Brand Name Extraction]
+    B --> C[ML Module]
+    B --> D[LLM Module]
+    B --> E[CV Module]
     
-    E --> H[Feature Extraction]
-    F --> I[Image Normalization]
-    G --> I
+    C --> C1[URL Feature Extraction]
+    C --> C2[LGBM Classification] 
+    C --> C3[SHAP Explainability]
     
-    H --> J[Module 1: ML Detection]
-    I --> K[Module 2: CV Similarity]
-    F --> L[Module 3: LLM Analysis]
+    D --> D1[Content Scraping]
+    D --> D2[Mistral Analysis]
+    D --> D3[Risk Assessment]
     
-    J --> M[Ensemble Fusion]
-    K --> M
-    L --> M
+    E --> E1[Screenshot Capture]
+    E --> E2[Brand Matching]
+    E --> E3[Similarity Scoring]
     
-    M --> N[Final Verdict + Explainability]
-    N --> O[Streamlit Dashboard]
+    C3 --> F[Weighted Ensemble]
+    D3 --> F
+    E3 --> F
     
-    style A fill:#e1f5fe
-    style N fill:#c8e6c9
-    style O fill:#fff3e0
+    F --> G[Final Verdict]
 
 ### Multi-Modal Analysis Pipeline:
 - **Structural Analysis**: 30+ URL features, DNS patterns, domain characteristics
