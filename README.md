@@ -55,30 +55,73 @@ graph TB
 ```
 
 ```mermaid
-flowchart TD
-    A[Input URL] --> B[Parallel Processing]
-    
-    B --> C[ML Module]
-    B --> D[LLM Module]
-    B --> E[CV Module]
-    
-    C --> C1[URL Feature Extraction]
-    C --> C2[LGBM Classification] 
-    C --> C3[SHAP Explainability]
-    
-    D --> D1[Content Scraping]
-    D --> D2[Mistral Analysis]
-    D --> D3[Risk Assessment]
-    
-    E --> E1[Screenshot Capture]
-    E --> E2[Brand Matching]
-    E --> E3[Similarity Scoring]
-    
-    C3 --> F[Weighted Ensemble]
-    D3 --> F
-    E3 --> F
-    
-    F --> G[Final Verdict]
+flowchart TB
+ subgraph Input["Input Layer"]
+        URL[/"User Input (URL)"/]
+  end
+
+ subgraph Extraction["Data Extraction"]
+        Screen["Screenshot Capture"]
+        HTML["HTML Content Scraping & URL features"]
+  end
+
+ subgraph Pillar1["Pillar 1: ML Model"]
+        LGBM["LightGBM Model"]
+        SHAP["SHAP Explanation"]
+  end
+
+ subgraph Pillar2["Pillar 2: LLM Analysis"]
+        Mistral["Mistral via Ollama"]
+        JSON["Verdict + Reasons"]
+  end
+
+ subgraph Pillar3["Pillar 3: UI Similarity"]
+        Brand["Brand Matching"]
+        SimScore["Similarity Scoring"]
+  end
+
+ subgraph Parallel["Parallel Processing"]
+        Pillar1
+        Pillar2
+        Pillar3
+  end
+
+ subgraph Output["Final Output"]
+        Agg["Aggregation Engine"]
+        Final["Final Verdict & Dashboard"]
+  end
+
+    URL --> Screen & HTML
+    Screen --> Pillar3
+    HTML --> Pillar1 & Pillar2
+    Pillar1 --> LGBM
+    LGBM --> SHAP
+    Pillar2 --> Mistral
+    Mistral --> JSON
+    Pillar3 --> Brand
+    Brand --> SimScore
+    SHAP --> Agg
+    JSON --> Agg
+    SimScore --> Agg
+    Agg --> Final
+
+     URL:::input
+     Screen:::extraction
+     HTML:::extraction
+     LGBM:::pipeline
+     Mistral:::pipeline
+     Brand:::pipeline
+     Pillar1:::pillar
+     Pillar2:::pillar
+     Pillar3:::pillar
+     Agg:::output
+     Final:::output
+
+    classDef input fill:#90CAF9,stroke:#1565C0,color:#000
+    classDef extraction fill:#A5D6A7,stroke:#2E7D32,color:#000
+    classDef pillar fill:#FFE082,stroke:#FFA000,color:#000
+    classDef pipeline fill:#EF9A9A,stroke:#C62828,color:#000
+    classDef output fill:#CE93D8,stroke:#6A1B9A,color:#000
 ```
 
 ```mermaid
