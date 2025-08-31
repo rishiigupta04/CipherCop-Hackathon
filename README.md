@@ -84,9 +84,10 @@ flowchart TD
 ```mermaid
 flowchart TD
     A[Module Outputs] --> B[Score Normalization]
-    B --> C[ML Score (Weight: 0.5)]
-    B --> D[LLM Score (Weight: 0.3)]
-    B --> E[CV Score (Weight: 0.2)]
+    
+    B --> C[ML Score - Weight 0.5]
+    B --> D[LLM Score - Weight 0.3]
+    B --> E[CV Score - Weight 0.2]
     
     C --> F[Weighted Sum Calculation]
     D --> F
@@ -94,8 +95,8 @@ flowchart TD
     
     F --> G{Final Score ≥ 0.5?}
     
-    G -->|Yes| H[LEGITIMATE ✅]
-    G -->|No| I[PHISHING 🚨]
+    G -->|Yes| H[LEGITIMATE]
+    G -->|No| I[PHISHING]
     
     H --> J[Confidence Level]
     I --> J
@@ -106,7 +107,6 @@ flowchart TD
     style F fill:#fff3e0,stroke:#ff9800,stroke-width:2px
     style H fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
     style I fill:#ffcdd2,stroke:#c62828,stroke-width:2px
-
 ```
 
 ```mermaid
