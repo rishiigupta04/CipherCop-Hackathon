@@ -218,6 +218,8 @@ sequenceDiagram
 
 [![Demo Video](https://img.youtube.com/vi/2m9npI4JRYI/0.jpg)](https://youtu.be/2m9npI4JRYI)
 
+[View PDF Presentation](https://drive.google.com/file/d/1VNHsxop0AM7URDV3iW016vqW79Jq68_5/view?usp=sharing)
+
 **Watch our complete system demonstration and technical walkthrough!**
 
 
