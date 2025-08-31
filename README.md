@@ -198,7 +198,15 @@ sequenceDiagram
 - **Structural Analysis**: 30+ URL features, DNS patterns, domain characteristics
 - **Content Analysis**: Web scraping + NLP via local LLM
 - **Visual Analysis**: Screenshot comparison with brand references
-  
+
+## 🎬 Demo Video & Presentation Slides
+
+[![Demo Video](https://img.youtube.com/vi/2m9npI4JRYI/0.jpg)](https://youtu.be/2m9npI4JRYI)
+
+[View PDF Presentation](https://drive.google.com/file/d/1VNHsxop0AM7URDV3iW016vqW79Jq68_5/view?usp=sharing)
+
+**Watch our complete system demonstration and technical walkthrough!**
+
 
 ## 🚀 Key Features
 
@@ -213,15 +221,6 @@ sequenceDiagram
 - **Fuzzy Brand Matching** - RapidFuzz for domain-brand association
 - **Advanced OCR** - Tesseract with preprocessing for text extraction
 - **Robust Error Handling** - Graceful degradation when modules fail
-
-## 🎬 Demo Video & Presentation Slides
-
-[![Demo Video](https://img.youtube.com/vi/2m9npI4JRYI/0.jpg)](https://youtu.be/2m9npI4JRYI)
-
-[View PDF Presentation](https://drive.google.com/file/d/1VNHsxop0AM7URDV3iW016vqW79Jq68_5/view?usp=sharing)
-
-**Watch our complete system demonstration and technical walkthrough!**
-
 
 ---
 
