@@ -26,7 +26,9 @@ Input (URL/Image) → Processing → [ML + LLM + CV] → Ensemble → Final Verd
 
 Each analysis completes in under 30 seconds with parallel execution:
 
-![System Architecture](assets/main.png)
+## System Architecture
+
+<img src="assets/main.png" alt="System Architecture" width="600"/>
 
 <details>
 <summary>View Mermaid Source</summary>
