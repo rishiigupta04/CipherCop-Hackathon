@@ -27,32 +27,6 @@ Input (URL/Image) → Processing → [ML + LLM + CV] → Ensemble → Final Verd
 Each analysis completes in under 30 seconds with parallel execution:
 
 ```mermaid
-flowchart TD
-    A[Input URL] --> B[Parallel Processing]
-    
-    B --> C[ML Module]
-    B --> D[LLM Module]
-    B --> E[CV Module]
-    
-    C --> C1[URL Feature Extraction]
-    C --> C2[LGBM Classification] 
-    C --> C3[SHAP Explainability]
-    
-    D --> D1[Content Scraping]
-    D --> D2[Mistral Analysis]
-    D --> D3[Risk Assessment]
-    
-    E --> E1[Screenshot Capture]
-    E --> E2[Brand Matching]
-    E --> E3[Similarity Scoring]
-    
-    C3 --> F[Weighted Ensemble]
-    D3 --> F
-    E3 --> F
-    
-    F --> G[Final Verdict]
-```
-```mermaid
 graph TB
     subgraph Frontend
         A[Streamlit UI]
@@ -79,10 +53,37 @@ graph TB
     D --> F
     D --> E
 ```
+
+```mermaid
+flowchart TD
+    A[Input URL] --> B[Parallel Processing]
+    
+    B --> C[ML Module]
+    B --> D[LLM Module]
+    B --> E[CV Module]
+    
+    C --> C1[URL Feature Extraction]
+    C --> C2[LGBM Classification] 
+    C --> C3[SHAP Explainability]
+    
+    D --> D1[Content Scraping]
+    D --> D2[Mistral Analysis]
+    D --> D3[Risk Assessment]
+    
+    E --> E1[Screenshot Capture]
+    E --> E2[Brand Matching]
+    E --> E3[Similarity Scoring]
+    
+    C3 --> F[Weighted Ensemble]
+    D3 --> F
+    E3 --> F
+    
+    F --> G[Final Verdict]
+```
+
 ```mermaid
 flowchart TD
     A[Module Outputs] --> B[Score Normalization]
-    
     B --> C[ML Score (Weight: 0.5)]
     B --> D[LLM Score (Weight: 0.3)]
     B --> E[CV Score (Weight: 0.2)]
