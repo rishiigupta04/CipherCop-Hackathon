@@ -242,7 +242,6 @@ print(f"Similarity Score: {similarity['score']}")
 ### Problem Solved:
 ✅ **Proactive Detection** - No more waiting for user reports  
 ✅ **Multi-Modal Analysis** - Comprehensive fraud assessment  
-✅ **Real-time Processing** - Instant website scanning  
 ✅ **Explainable Results** - Transparent AI decisions  
 
 ### Business Applications:
