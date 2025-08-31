@@ -89,22 +89,22 @@ streamlit run everything.py
 
 ### Dependencies
 ```txt
-streamlit>=1.28.0
-selenium>=4.15.0
-scikit-learn>=1.3.0
-lightgbm>=4.0.0
-shap>=0.42.0
-opencv-python>=4.8.0
-Pillow>=10.0.0
-imagehash>=4.3.0
-pytesseract>=0.3.10
-beautifulsoup4>=4.12.0
-rapidfuzz>=3.5.0
-requests>=2.31.0
-ollama>=0.1.0
-matplotlib>=3.7.0
-numpy>=1.24.0
-pandas>=2.0.0
+streamlit
+selenium
+scikit-learn
+lightgbm
+shap
+opencv-python
+Pillow
+imagehash
+pytesseract
+beautifulsoup4
+rapidfuzz
+requests
+ollama
+matplotlib
+numpy
+pandas
 ```
 
 ## 🎮 Usage
